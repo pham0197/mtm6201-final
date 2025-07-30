@@ -10,41 +10,46 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 <body>
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to main nav</a></li>
+        <li><a href="#main-content">Skip to main content</a></li>
+      </ul>
+
   <header class="bg-success text-white py-3">
     <nav class="navbar navbar-expand-lg navbar-dark bg-success" role="navigation" id="nav">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.jpg" alt="Sloane Logo" height="40">
+            <img src="images/logo.jpg" alt="Sloane Logo" height="80">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
       
-          <div class="offcanvas offcanvas-end text-bg-success" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas offcanvas-end text-bg-success" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </nav>
+    </nav>
       
   </header>
 
-  <main>
+  <main id="main-content" role="main">
     <section class="py-5 text-center bg-light" data-aos="fade-up" id="about">
       <div class="container">
         <h2 class="display-2">Our Story</h2>
@@ -53,24 +58,28 @@
     </section>
 
     <section class="py-5" data-aos="fade-up">
-      <div class="container">
-        <h2 class="text-center mb-4">Our Values</h2>
-        <div class="row">
-          <div class="col-md-4 text-center">
-            <h5>Locally Sourced</h5>
-            <p>We work with local farms to source the freshest ingredients.</p>
-          </div>
-          <div class="col-md-4 text-center">
-            <h5>Sustainable Practices</h5>
-            <p>We prioritize sustainability in everything we do.</p>
-          </div>
-          <div class="col-md-4 text-center">
-            <h5>Inclusive Community</h5>
-            <p>We welcome everyone to enjoy delicious vegetarian food.</p>
+        <div class="container">
+          <h2 class="text-center mb-4">Our Values</h2>
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img src="images/local.jpg" alt="Fresh produce" class="img-fluid mb-3 rounded" style="max-height: 300px;">
+              <h5>Locally Sourced</h5>
+              <p>We work with local farms to source the freshest ingredients.</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <img src="images/sustainable.jpg" alt="Green practices" class="img-fluid mb-3 rounded" style="max-height: 300px;">
+              <h5>Sustainable Practices</h5>
+              <p>We prioritize sustainability in everything we do.</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <img src="images/community.jpg" alt="Diverse community" class="img-fluid mb-3 rounded" style="max-height: 300px;">
+              <h5>Inclusive Community</h5>
+              <p>We welcome everyone to enjoy delicious vegetarian food.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      
 
     <section class="py-5 text-center bg-light" data-aos="fade-up">
       <div class="container">
@@ -81,7 +90,7 @@
     </section>
   </main>
 
-  <footer class="bg-dark text-white text-center py-3">
+  <footer class="bg-dark text-white text-center py-3" role="contentinfo">
     <p>&copy; 2025 Sloane Vegetarian. All rights reserved.</p>
   </footer>
 

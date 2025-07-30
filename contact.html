@@ -10,41 +10,46 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 <body>
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to main nav</a></li>
+        <li><a href="#main-content">Skip to main content</a></li>
+      </ul>
+
   <header class="bg-success text-white py-3">
     <nav class="navbar navbar-expand-lg navbar-dark bg-success" role="navigation" id="nav">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.jpg" alt="Sloane Logo" height="40">
+            <img src="images/logo.jpg" alt="Sloane Logo" height="80">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
       
-          <div class="offcanvas offcanvas-end text-bg-success" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas offcanvas-end text-bg-success" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </nav>
+    </nav>
       
   </header>
 
-  <main id="main-content">
+  <main id="main-content" role="main">
     <section class="py-5 text-center bg-light" data-aos="fade-up" id="contactus">
       <div class="container">
         <h2 class="display-2">Contact Us</h2>
@@ -94,7 +99,7 @@
     </section>
   </main>
 
-  <footer class="bg-dark text-white text-center py-3">
+  <footer class="bg-dark text-white text-center py-3" role="contentinfo">
     <p>&copy; 2025 Sloane Vegetarian. All rights reserved.</p>
   </footer>
 
