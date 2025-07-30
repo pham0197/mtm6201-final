@@ -16,12 +16,15 @@
 
 </head>
 <body>
-  <a href="#main-content" class="visually-hidden-focusable">Skip to content</a>
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to main nav</a></li>
+        <li><a href="#main-content">Skip to main content</a></li>
+      </ul>
 
-  <header class="bg-success text-white py-3">
-    <nav class="container d-flex justify-content-between align-items-center flex-wrap">
+  <header class="bg-success text-white py-3" role="banner">
+    <nav class="container d-flex justify-content-between align-items-center flex-wrap" role="navigation" id="nav">
         <a href="index.html" class="logo">
-            <img src="images/my-coffee-shop-logo.svg" alt="My Coffee House Logo">
+            <img src="images/logo.jpg" alt="Sloane Logo">
         </a>
         <input type="checkbox" class="menubar" id="menubar">
         <label for="menubar" class="hambuger">
@@ -35,49 +38,80 @@
     </nav>
   </header>
 
-  <main id="main-content">
-    <section class="py-5 text-center bg-light" data-aos="fade-up">
-      <div class="container">
-        <h2>Fresh. Local. Delicious.</h2>
-        <p class="lead">A modern vegetarian dining experience that celebrates natural flavors.</p>
-      </div>
-    </section>
-
-    <section class="py-5" data-aos="fade-up">
-      <div class="container">
-        <h2 class="text-center mb-4">Featured Dishes</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <article class="card h-100">
-              <img src="images/tofu.jpg" class="card-img-top" alt="Tofu Delight" />
-              <div class="card-body">
-                <h5 class="card-title">Tofu Delight</h5>
-                <p>Marinated tofu on seasonal greens.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="card h-100">
-              <img src="images/salad.jpg" class="card-img-top" alt="Rainbow Salad" />
-              <div class="card-body">
-                <h5 class="card-title">Rainbow Salad</h5>
-                <p>Colorful vegetables with citrus vinaigrette.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="card h-100">
-              <img src="images/soup.jpg" class="card-img-top" alt="Pumpkin Soup" />
-              <div class="card-body">
-                <h5 class="card-title">Pumpkin Soup</h5>
-                <p>Warm, creamy and comforting.</p>
-              </div>
-            </article>
+  <main id="main-content" role="main">
+    <!--Section 1-->
+      <section id="hero">
+        <div class="container"> 
+          <div class="d-flex justify-content-center align-items-center" data-aos="fade-up" >
+            <div class="text-darkslategray text-center">
+              <h1 class="display-1">Fresh. Local. Delicious.</h1>
+              <p class="lead">Fresh. Flavorful. 100% Plant-Based.<br>
+                Experience vibrant vegan cuisine made with love and locally sourced ingredients.<br>
+                Eat well. Live well. Visit us today!</p>
+              <button class="btn btn-light" type="button">Order Now</button>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+       <!--Section 2-->
+    <section id="cards" class="py-5" data-aos="fade-up">
+      <div class="container">
+            <h2 class="text-center mb-4">Special of the Day</h2>
+
+            <div class="row gy-4">
+
+                <div class="col-sm-6 col-lg-3">
+                        <div class="card text-bg-dark">
+                            <img src="images/Tofu-delight.jpg" class="card-img-top" alt="Tofu Delight" />
+                            <div class="card-body">
+                                <h3 class="h4 card-title">Tofu Delight</h3>
+                                <p class="card-text">Marinated tofu on seasonal greens.</p>
+                                <p>Tofu Delight is a flavorful vegan dish made with golden-fried tofu and fresh seasonal vegetables. It's tossed in a savory soy-based sauce with hints of garlic and ginger. The dish is both protein-rich and satisfying, perfect for a wholesome meal. Served with rice or noodles, it's a favorite among plant-based food lovers.</p>
+                                <a href="#" class="btn btn-light" type="button">Order Now</a>
+                            </div>
+                        </div>
+                </div>
+                
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card text-bg-dark">
+                        <img src="images/rainbow-salad.jpg" class="card-img-top" alt="Rainbow Salad">
+                        <div class="card-body">
+                            <h3 class="h4 card-title">Rainbow Salad</h3>
+                            <p class="card-text">Colorful vegetables with citrus vinaigrette.</p>
+                            <p>Rainbow Salad is a colorful and refreshing dish made with a variety of fresh vegetables and fruits. It typically includes ingredients like carrots, red cabbage, bell peppers, cucumbers, and cherry tomatoes. Each bite offers a crisp texture and a burst of natural flavors. Tossed with a light vinaigrette or tangy dressing</p>
+                            <a href="#" class="btn btn-light" type="button">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card text-bg-dark">
+                        <img src="images/pumpkin-soup.jpg" class="card-img-top" alt="Rainbow Salad">
+                        <div class="card-body">
+                            <h3 class="h4 card-title">Pumpkin Soup</h3>
+                            <p class="card-text">Warm, creamy and comforting.</p>
+                            <p>Pumpkin soup is a creamy and flavorful dish made from fresh pumpkin. It has a smooth texture and a naturally sweet, earthy taste. The soup is often cooked with garlic, onion, and a touch of cream for extra richness. Served hot, it's perfect for cold days. Garnished with herbs or a swirl of cream, it's both comforting and nutritious.</p>
+                            <a href="#" class="btn btn-light" type="button">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card text-bg-dark">
+                        <img src="images/pumpkin-soup.jpg" class="card-img-top" alt="Rainbow Salad">
+                        <div class="card-body">
+                            <h3 class="h4 card-title">Pumpkin Soup</h3>
+                            <p class="card-text">Warm, creamy and comforting.</p>
+                            <p>Pumpkin soup is a creamy and flavorful dish made from fresh pumpkin. It has a smooth texture and a naturally sweet, earthy taste. The soup is often cooked with garlic, onion, and a touch of cream for extra richness. Served hot, it's perfect for cold days. Garnished with herbs or a swirl of cream, it's both comforting and nutritious.</p>
+                            <a href="#" class="btn btn-light" type="button">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!--Section 3-->
     <section class="bg-success text-white text-center py-5" data-aos="fade-up">
       <div class="container">
         <h2>Book Your Table Today</h2>
@@ -86,7 +120,7 @@
     </section>
   </main>
 
-  <footer class="bg-dark text-white text-center py-3">
+  <footer class="bg-dark text-white text-center py-3" role="contentinfo">
     <p>&copy; 2025 Sloane Vegetarian. All rights reserved.</p>
   </footer>
 

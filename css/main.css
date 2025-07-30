@@ -1,5 +1,18 @@
 
-   
+.skip-links {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-links:focus {
+    left: 0;
+    top: 0;
+    background: #000000;
+    color: #ffffff;
+    padding: 1em;
+    z-index: 1000;
+}
+  
 .hambuger {
     display: none;
     cursor: pointer;
@@ -7,6 +20,26 @@
     padding: 0.5rem;
   }
   
+  #hero {
+    background-image: url(../images/hero-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #999;
+}
+ 
+#hero .d-flex {
+    height: 70vh;
+}
+
+
+
+
+
+
+
+
+
   /* mobile */
   @media (max-width: 768px) {
     .hambuger {
@@ -18,6 +51,7 @@
       flex-direction: column;
       width: 100%;
       background-color: #198754;
+      text-align: center;
     }
   
     .menubar:checked + .hambuger + .nav {
@@ -38,6 +72,7 @@
       .nav {
         display: none;
         flex-direction: column;
+        text-align: center;
         width: 100%;
         background-color: #198754;
       }
