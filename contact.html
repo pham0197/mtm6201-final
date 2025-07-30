@@ -13,17 +13,17 @@
     <ul class="skip-links">
         <li><a href="#nav">Skip to main nav</a></li>
         <li><a href="#main-content">Skip to main content</a></li>
-      </ul>
+    </ul>
 
   <header class="bg-success text-white py-3">
     <nav class="navbar navbar-expand-lg navbar-dark bg-success" role="navigation" id="nav">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.jpg" alt="Sloane Logo" height="80">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" alt="Sloane Logo" height="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
       
             <div class="offcanvas offcanvas-end text-bg-success" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
                 <div class="offcanvas-header">
@@ -49,55 +49,59 @@
       
   </header>
 
-  <main id="main-content" role="main">
+<main id="main-content" role="main">
+    <!--Section 1-->
     <section class="py-5 text-center bg-light" data-aos="fade-up" id="contactus">
-      <div class="container">
-        <h2 class="display-2">Contact Us</h2>
-        <p class="lead">We'd love to hear from you. Send us a message below.</p>
-      </div>
-    </section>
-
-    <section class="py-5" data-aos="fade-up">
-      <div class="container">
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="row g-3">
-          <div class="col-md-6">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" name="name" required />
-          </div>
-          <div class="col-md-6">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email" required />
-          </div>
-          <div class="col-12">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-success">Send Message</button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <section class="py-5 bg-light" data-aos="fade-up">
-      <div class="container">
-        <h2 class="text-center mb-4">Visit Us</h2>
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Google Map location"></iframe>
+        <div class="container">
+            <h2 class="display-2">Contact Us</h2>
+            <p class="lead">We'd love to hear from you. Send us a message below.</p>
         </div>
-      </div>
     </section>
 
-    <section class="py-5 text-center" data-aos="fade-up">
-      <div class="container">
-        <h2>Opening Hours</h2>
-        <ul class="list-unstyled">
-          <li>Monday - Friday: 11:00 AM - 9:00 PM</li>
-          <li>Saturday - Sunday: 10:00 AM - 10:00 PM</li>
-        </ul>
-      </div>
+    <!--Section 2-->
+    <section class="py-5" data-aos="fade-up">
+        <div class="container">
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="row g-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required />
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required />
+            </div>
+            <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-success">Send Message</button>
+            </div>
+            </form>
+        </div>
     </section>
-  </main>
+
+    <!--Section 3-->
+    <section class="py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-4">Visit Us</h2>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Google Map location"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!--Section 4-->
+    <section class="py-5 text-center" data-aos="fade-up">
+        <div class="container">
+            <h2>Opening Hours</h2>
+            <ul class="list-unstyled">
+            <li>Monday - Friday: 11:00 AM - 9:00 PM</li>
+            <li>Saturday - Sunday: 10:00 AM - 10:00 PM</li>
+            </ul>
+        </div>
+    </section>
+</main>
 
   <footer class="bg-dark text-white text-center py-3" role="contentinfo">
     <p>&copy; 2025 Sloane Vegetarian. All rights reserved.</p>
