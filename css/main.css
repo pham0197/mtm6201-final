@@ -13,12 +13,7 @@
     z-index: 1000;
 }
   
-.hambuger {
-    display: none;
-    cursor: pointer;
-    font-size: 2rem;
-    padding: 0.5rem;
-  }
+
   
   #hero {
     background-image: url(../images/hero-background.jpg);
@@ -56,67 +51,4 @@
 
 
 
-  /* mobile */
-  @media (max-width: 768px) {
-    .hambuger {
-      display: block;
-    }
   
-    .nav {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background-color: #198754;
-      text-align: center;
-    }
-  
-    .menubar:checked + .hambuger + .nav {
-      display: flex;
-    }
-    .menubar {
-        display: none;
-    }
-  }
-  
-/* Tablet responsiveness */
-@media (min-width: 768px) and (max-width: 1099px){
-    
-    .hambuger {
-        display: block;
-      }
-    
-      .nav {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        background-color: #198754;
-      }
-    
-      .menubar:checked + .hambuger + .nav {
-        display: flex;
-      }
-      .menubar {
-          display: none;
-      }
-    }
-/* Deskstop responsiveness */
-
-@media (min-width: 1100px) {
-   
-    .nav {
-        display: flex;
-    }
-    .hambuger {
-        display: none;
-    }
-    .menubar {
-        display: none;
-    }
-    nav {
-        font-family: var(--l-ss);
-        max-width: var(--mw);
-        text-align: center;
-        margin: 0 auto;
-    }
-}
