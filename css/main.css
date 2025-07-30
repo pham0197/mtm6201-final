@@ -32,10 +32,26 @@
     height: 70vh;
 }
 
-
-
-
-
+#about {
+    background-image: url(../images/hero-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #999;
+}
+#about .d-flex {
+    height: 70vh;
+}
+#contactus {
+    background-image: url(../images/hero-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #999;
+}
+#contactus .d-flex {
+    height: 70vh;
+}
 
 
 
